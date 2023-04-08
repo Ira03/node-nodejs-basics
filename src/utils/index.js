@@ -5,11 +5,11 @@ export const checkIsFileExist = async (file) => {
   try {
     await access(file);
     return true;
-  } catch (error) {
+  } catch {
     return false;
   }
 };
 
-export const createFilePath = (folder, fileName = "") => {
-  return path.resolve("src", "fs", folder, fileName);
+export const createFilePath = (fileName = "") => {
+  return path.resolve("src/fs/files", fileName);
 };

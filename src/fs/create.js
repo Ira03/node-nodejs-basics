@@ -9,7 +9,7 @@ import {
 } from "../constants/index.js";
 
 const create = async () => {
-  const filePath = createFilePath("files", "fresh.txt");
+  const filePath = createFilePath("fresh.txt");
 
   try {
     await writeFile(filePath, CONTENT, { encoding: "utf8", flag: "wx" });

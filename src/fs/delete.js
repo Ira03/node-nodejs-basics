@@ -5,7 +5,7 @@ import { createFilePath } from "../utils/index.js";
 import { ERROR_MESSAGE, NO_SUCH_FILE_ERROR_CODE } from "../constants/index.js";
 
 const remove = async () => {
-  const filePath = createFilePath("files", "fileToRemove.txt");
+  const filePath = createFilePath("fileToRemove.txt");
 
   try {
     await unlink(filePath);
