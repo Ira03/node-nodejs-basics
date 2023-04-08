@@ -13,6 +13,7 @@ const copy = async () => {
   if (!isSrcExist || isDestExist) {
     throw new Error(ERROR_MESSAGE);
   }
+  
   await cp(src, dest, { recursive: true });
 };
 
