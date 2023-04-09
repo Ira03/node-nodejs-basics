@@ -1,6 +1,5 @@
 import { readFile } from "node:fs/promises";
 import { createHash } from "crypto";
-import { fileURLToPath, pathToFileURL } from "node:url";
 import path from "path";
 
 const calculateHash = async () => {
